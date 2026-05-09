@@ -6,10 +6,10 @@
   "main": "dist/index.js",
   "description": "Template for building OpenCode plugins with TypeScript",
   "scripts": {
+    "prebuild": "prettier --check . || prettier --write .",
     "build": "rm -rf dist && tsc -p tsconfig.json",
     "test": "bun test",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "format": "prettier --check . || prettier --write .",
     "prepare": "husky install"
   },
   "opencode": {

@@ -2,6 +2,7 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 bunx lint-staged
+bun run build
 bun test
 
 gitleaks protect --staged --config .gitleaks.toml --verbose || true
