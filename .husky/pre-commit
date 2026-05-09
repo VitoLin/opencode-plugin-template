@@ -3,6 +3,7 @@
 
 bunx lint-staged
 bun run build
+git add dist/
 bun test
 
 gitleaks protect --staged --config .gitleaks.toml --verbose || true
