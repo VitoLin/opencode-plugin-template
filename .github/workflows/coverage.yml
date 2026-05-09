@@ -24,7 +24,7 @@ jobs:
         run: $HOME/.bun/bin/bun install
 
       - name: Run coverage
-        run: $HOME/.bun/bin/bun test
+        run: $HOME/.bun/bin/bun test --coverage
 
       - name: Generate coverage badge
         run: |
